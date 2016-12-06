@@ -1,0 +1,103 @@
+@import "./node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "./node_modules/susy/sass/susy";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    @include container(60%);  // set the container for the page
+    background: #efefef;
+    font-family: 'Roboto', sans-serif;
+    padding: .45em 2.65em 3em;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h1 + p {
+    font-size: 1.08em;
+    color: #637a91;
+    margin-top: .5em;
+    margin-bottom: 2.65em;
+    padding-bottom: 1.325em;
+
+}
+
+ul {
+    padding-left: 0;
+
+}
+
+li {
+    font-size: 1.5rem;
+    padding: .45em .5em;
+    margin-bottom: .35em;
+    display: flex;
+    padding-left: 1.5em;
+    align-items: center;
+}
+
+input,
+button {
+    font-size: .85em;
+    padding: .65em 1em;
+    border-radius: .3em;
+    outline: 0;
+}
+
+input {
+    border: 1px solid #dcdcdc;
+    margin-left: 1em;
+}
+
+div {
+    margin-top: 2.8em;
+    padding: 1.5em 0 .5em;
+    border-top: 1px solid #dcdcdc ;
+}
+
+p.description,
+p:nth-of-type(2) {
+    font-weight: bold;
+    padding-left: 1em;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    color: white;
+    background: #1EACE5;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+button + button {
+  margin-left: .5em;
+}
+
+p + button {
+  background: #52bab3;
+}
+
+.list {
+  background: #DBEA4A;
+
+  button + button {
+    background: #36A8A2;
+  }
+  button:first-child {
+    margin-left: auto;
+    background: #1EACE5;
+  }
+    button:last-child {
+    background-color: #1EACE5;
+    }
+    button {
+      font-size: 1rem;
+      padding: .5em .65em;
+    }
+
+}
